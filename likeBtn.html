@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="btns">
+        <Button onclick="Toggle1()" id="btnh1" class="btn"><i class="fas fa-heart"></i></Button>
+        <Button onclick="Toggle2()" id="btnh2" class="btn"><i class="far fa-heart"></i></Button>
+        <Button onclick="Toggle3()" id="btnh3" class="btn"><i class="fab fa-gratipay"></i></Button>
+        <Button onclick="Toggle()" id="btnh4" class="btn4"><i class="fa fa-trash" aria-hidden="true"></i></Button>
+        <i class="bi bi-2-square-fill"></i>
+        
+
+
+        ////
+        <div class="decButton">
+            <button class="dec">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+              </svg>
+             </button>
+         </div>
+        <input type="text" name="qty" id="1" value="0">
+        <div class="incButton">
+            <button class="inc">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+             </svg>
+            </button>
+       </div>
+       /////
+       <div class="container">
+        <button data-decrease>-</button>
+        <input data-value type="text" value="1" disabled />
+        <button data-increase>+</button>
+    </div>
+    
+    <div class="container">
+        <button data-decrease>-</button>
+        <input data-value type="text" value="1" />
+        <button data-increase>+</button>
+    </div>
+
+       
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f6dcf461c1.js" crossorigin="anonymous"></script>
+<script src="./styles.css"></script>
+<script>
+       
+
+    // First Like Button   
+       var btnvar1 = document.getElementById('btnh1');
+
+       function Toggle1(){
+                if (btnvar1.style.color =="red") {
+                    btnvar1.style.color = "grey"
+                }
+                else{
+                    btnvar1.style.color = "red"
+                }
+       }
+
+
+
+    //    Second Like Button   
+       var btnvar2 = document.getElementById('btnh2');
+
+       function Toggle2(){
+                if (btnvar2.style.color =="red") {
+                    btnvar2.style.color = "grey"
+                }
+                else{
+                    btnvar2.style.color = "red"
+                }
+       }
+
+
+
+
+    //    Third Like Button   
+       var btnvar3 = document.getElementById('btnh3');
+
+       function Toggle3(){
+                if (btnvar3.style.color =="red") {
+                    btnvar3.style.color = "grey"
+                }
+                else{
+                    btnvar3.style.color = "red"
+                }
+       }
+
+    </script>
+ <script src="./main.js"></script>
+</html>
